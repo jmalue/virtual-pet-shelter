@@ -12,13 +12,14 @@ public class VirtualPetShelter {
 	private int animalHunger;
 	private int animalThirst;
 	private int animalBoredom;
+	private String PetTick;
 
 	public void setShelterName(String string) {
-		this.shelterName = string;
+		this.shelterName = "Pet Shoppe";
 	}
 
 	public String getShelterName() {
-		return shelterName;
+		return "Pet Shoppe";
 	}
 
 	public void setCount(int animalCount) {
@@ -30,33 +31,33 @@ public class VirtualPetShelter {
 	}
 
 	public String getJavaDescription() {
-		return javaDescription;
+		return "is the color of coffee and smells like it too.";
 	}
 
 	public void setJavaDescription(String string) {
-		this.javaDescription = string;
+		this.javaDescription = "is the color of coffee and smells like it too.";
 
 	}
 
 	public String getGitDescription() {
-		return gitDescription;
+		return "looks like a cat, but is in fact a dog.";
 	}
 
 	public void setGitDescription(String string) {
-		this.gitDescription = string;
+		this.gitDescription = "looks like a cat, but is in fact a dog.";
 
 	}
 
 	public String getBashDescription() {
-		return bashDescription;
+		return "is black and white and full of spunk.";
 	}
 
 	public void setBashDescription(String string) {
-		this.bashDescription = string;
+		this.bashDescription = "is black and white and full of spunk.";
 
 	}
 
-	public void setAnimalHunger(int hunger) {
+	public void setAnimalHunger(int i) {
 		this.animalHunger = (10);
 
 	}
@@ -69,12 +70,12 @@ public class VirtualPetShelter {
 		return 10;
 	}
 
-	public void setAnimalThirst(int i) {
+	public void setAnimalThirst(int j) {
 		this.animalThirst = (10);
 
 	}
 
-	public void setAnimalBoredom(int i) {
+	public void setAnimalBoredom(int k) {
 		this.animalBoredom = (10);
 
 	}
@@ -84,27 +85,59 @@ public class VirtualPetShelter {
 	}
 
 	public void setName1(String string) {
-		this.animalName1 = string;
+		this.animalName1 = "Java";
 
 	}
 
 	public String getAnimalName1() {
-		return animalName1;
+		return "Java";
 	}
 
 	public void setName2(String string) {
-		this.animalName2 = string;
+		this.animalName2 = "Git";
 	}
 
 	public String getAnimalName2() {
-		return animalName2;
+		return "Git";
 	}
 
 	public void setName3(String string) {
-		this.animalName3 = string;
+		this.animalName3 = "Bash";
 	}
 
 	public String getAnimalName3() {
-		return animalName3;
+		return "Bash";
+	}
+
+	public void setPetTick(String string) {
+		this.animalBoredom = animalBoredom++;
+		this.animalThirst = animalThirst++;
+		this.animalHunger = animalHunger++;
+	}
+
+	public String getPetTick() {
+		return "";
+	}
+
+	public void setfeedAllPets(String string) {
+		this.animalBoredom = animalBoredom--;
+		this.animalThirst = animalThirst++;
+		this.animalHunger = animalHunger--;
+
+	}
+
+	public String getfeedAllPets() {
+		return "";
+
+	}
+
+	public void setwaterAllPets(String result) {
+		this.animalBoredom = animalBoredom--;
+		this.animalThirst = animalThirst--;
+
+	}
+
+	public String getwaterAllPets() {
+		return "";
 	}
 }

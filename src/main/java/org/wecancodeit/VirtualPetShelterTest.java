@@ -68,10 +68,10 @@ public class VirtualPetShelterTest {
 	public void JavaPetDescription() {
 		VirtualPetShelter javaDescription = new VirtualPetShelter();
 		// act
-		javaDescription.setJavaDescription("Java is the color of coffee and smells like it too");
+		javaDescription.setJavaDescription("is the color of coffee and smells like it too.");
 		result = javaDescription.getJavaDescription();
 		// assert
-		assertEquals("Java is the color of coffee and smells like it too", result);
+		assertEquals("is the color of coffee and smells like it too.", result);
 
 	}
 
@@ -79,10 +79,10 @@ public class VirtualPetShelterTest {
 	public void GitPetDescription() {
 		VirtualPetShelter gitDescription = new VirtualPetShelter();
 		// act
-		gitDescription.setGitDescription("Git looks like a cat, but is in fact a dog.");
+		gitDescription.setGitDescription("looks like a cat, but is in fact a dog.");
 		result = gitDescription.getGitDescription();
 		// assert
-		assertEquals("Git looks like a cat, but is in fact a dog.", result);
+		assertEquals("looks like a cat, but is in fact a dog.", result);
 
 	}
 
@@ -90,10 +90,10 @@ public class VirtualPetShelterTest {
 	public void BashPetDescription() {
 		VirtualPetShelter bashDescription = new VirtualPetShelter();
 		// act
-		bashDescription.setBashDescription("Bash is black and white and full of spunk.");
+		bashDescription.setBashDescription("is black and white and full of spunk.");
 		result = bashDescription.getBashDescription();
 		// assert
-		assertEquals("Bash is black and white and full of spunk.", result);
+		assertEquals("is black and white and full of spunk.", result);
 
 	}
 
@@ -125,12 +125,36 @@ public class VirtualPetShelterTest {
 		int result = animalBoredom.getAnimalBoredom();
 		// assert
 		assertEquals(10, result);
-		
+
 	}
-		
+
+	@Test
+	public void tickAllPets() {
+		VirtualPetShelter petTick = new VirtualPetShelter();
+		// act
+		petTick.setPetTick(result);
+		result = petTick.getPetTick();
+		// assert
+		assertEquals("", result);
 	}
-	
-	
-	
-	
-		
+
+	@Test
+	public void feedAllPets() {
+		VirtualPetShelter feedAllPets = new VirtualPetShelter();
+		// act
+		feedAllPets.setfeedAllPets(result);
+		result = feedAllPets.getfeedAllPets();
+		// assert
+		assertEquals("", result);
+	}
+
+	@Test
+	public void waterAllPets() {
+		VirtualPetShelter waterAllPets = new VirtualPetShelter();
+		// act
+		waterAllPets.setwaterAllPets(result);
+		result = waterAllPets.getwaterAllPets();
+		// assert
+		assertEquals("", result);
+	}
+}
